@@ -1,0 +1,45 @@
+﻿@keyframes colorTrans {
+    0% {background-color: black;}
+    15% {background-color: darkblue;}
+    30% {background-color: blue;}
+    45% {background-color: blueviolet;}
+    60% {background-color: violet;}
+    75% {background-color: darkviolet;}
+    90% {background-color: darkred;}
+    100% {background-color: black;}
+}
+
+nav {
+    background-color: black;
+    animation-name: colorTrans;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+#githublogo {
+    width: 2vw;
+    right: 8vw;
+}
+
+#githublogo:hover {
+    width: 2.2vw;
+}
+
+#linkedinlogo {
+    width: 2vw;
+    right: 5vw;
+}
+
+#linkedinlogo:hover {
+    width: 2.2vw;
+}
+
+#emaillogo {
+    width: 2vw;
+    right: 2vw;
+}
+
+#emaillogo:hover {
+    width: 2vw;
+}

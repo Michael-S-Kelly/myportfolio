@@ -1,0 +1,47 @@
+﻿#aboutmehead {
+    top: 7vh;
+    left: 30vw;
+    width: 40vw;
+    /* height: 90vw; */
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5; 
+    position: center;
+    position: relative;
+    color: whitesmoke;
+    /*text-align: center;*/
+    /* font-size: 2em; */
+}
+
+#personalsummary {
+    top: 6vh;
+    left: 20vw;
+    width: 60vw;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    position: relative;
+    opacity: 0.6;
+}
+
+h1 {
+    font-size: 4vh;
+    text-align: center;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 3vh;
+    text-align: center;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 2vh;
+    text-align: center;
+    opacity: 1;
+}
+
+p {
+    font-size: 2.5vh;
+    text-align: left;
+    opacity: 1;
+}
