@@ -1,25 +1,45 @@
-﻿#aboutmehead {
-    top: 7vh;
-    left: 30vw;
-    width: 40vw;
-    /* height: 90vw; */
+﻿.dialogboxes {
     background-color: rgb(0, 0, 0);
-    opacity: 0.5; 
+    opacity: 0.7;
     position: center;
     position: relative;
     color: whitesmoke;
-    /*text-align: center;*/
-    /* font-size: 2em; */
+}
+
+.noopacity {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 4vw;
+    position: center;
+    position: relative;
+    color: whitesmoke;
+}
+
+.card {
+    width: 5vw;
+}
+
+#cardimage {
+    width: 4vw;
+    position: center;
+}
+
+#aboutmehead {
+    top: 7vh;
+    left: 30vw;
+    width: 40vw;
+}
+
+#techskills {
+    top: 6vh;
+    left: 20vw;
+    width: 60vw;
 }
 
 #personalsummary {
     top: 6vh;
     left: 20vw;
     width: 60vw;
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
-    position: relative;
-    opacity: 0.6;
 }
 
 h1 {
@@ -37,6 +57,12 @@ h2 {
 h3 {
     font-size: 2vh;
     text-align: center;
+    opacity: 1;
+}
+
+h4 {
+    font-size: 1.5vh;
+    text-align: left;
     opacity: 1;
 }
 
