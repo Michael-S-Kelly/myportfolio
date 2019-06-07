@@ -1,0 +1,31 @@
+﻿@model MyPortfolio.Models.ViewModels.LoginViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Styles/Login.css" />
+
+
+<div class="regform">
+    <form method="post">
+        <div asp-validation-summary="All" class="text-primary"></div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+            <span asp-validation-for="Email" class="text-primary"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" />
+            <span asp-validation-for="Password" class="text-primary"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>

@@ -1,4 +1,7 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+@using MyPortfolio.Models
+@inject SignInManager<ApplicationUser> signInManager
+
 <!DOCTYPE html>
 
 <html>
@@ -45,11 +48,20 @@
                     </li>
                 </ul>
             </div>
-            <a href="github.com/Michael-S-Kelly" class="nav-link"><img src="~/Images/icons/GitHub-Mark.png" id="githublogo" alt="Git Hub icon"/></a>
-            <a href="linkedin.com/in/michael-s-kelly2019" class="nav-link"><img src="~/Images/icons/LinkedIn.png" id="linkedinlogo" alt="LinkedIn icon"/></a>
+            <a href="github.com/Michael-S-Kelly" class="nav-link"><img src="~/Images/icons/GitHub-Mark.png" id="githublogo" alt="Git Hub icon" /></a>
+            <a href="linkedin.com/in/michael-s-kelly2019" class="nav-link"><img src="~/Images/icons/LinkedIn.png" id="linkedinlogo" alt="LinkedIn icon" /></a>
             <a href="#" class="nav-link"><img src="~/Images/icons/email.png" id="emaillogo" alt="Contact Me icon" /></a>
-            <a href="../Login/" class="nav-link">Login</a>
-            <a href="#" class="nav-link">Register</a>
+
+            @if (signInManager.IsSignedIn(User))
+            {
+                 <a class="nav-link" asp-controller="Account" asp-action="Logout">Log Out</a>
+            }
+            else
+            {
+                <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+                <a class="nav-link" asp-controller="Account" asp-action="Register">Register</a>
+            }
+
         </nav>
     </header>
     <main>
